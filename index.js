@@ -1,4 +1,4 @@
-//this program uses the map method to access a property form each object an array
+//this program uses the map method to access a property from each object of an array
 
 //sample array
 const books = [
@@ -19,7 +19,7 @@ const books = [
     }
 ]
 
-
+//testing
 const titles = collectProperty(books, "title");
 
 
