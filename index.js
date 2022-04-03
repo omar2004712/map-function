@@ -25,7 +25,7 @@ const titles = collectProperty(books, "title");
 
 //actual function
 function collectProperty(array, property){
-    const modified = []; //to save all the objects in the array and exclude in other type
+    const modified = []; //to save all the objects in the array and exclude any other type
     //filter array
     for(el of array){
         if(typeof el === 'object'){
