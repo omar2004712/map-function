@@ -1,4 +1,4 @@
-//this program uses the map method to access a property form each object an array
+//this program uses the map method to access a property from each object of an array
 
 //sample array
 const books = [
@@ -19,13 +19,13 @@ const books = [
     }
 ]
 
-
+//testing
 const titles = collectProperty(books, "title");
 
 
 //actual function
 function collectProperty(array, property){
-    const modified = []; //to save all the objects any the array and exclude in other type
+    const modified = []; //to save all the objects any the array and exclude any other type
     //filter array
     for(el of array){
         if(typeof el === 'object'){
@@ -33,11 +33,7 @@ function collectProperty(array, property){
         }
     }
 
-    const collection = modified.map(
-        function(el){
-            return el[property];
-        }
-    )
+    const collection = modified.map( el => el[property] )
 
     return collection;
 }
